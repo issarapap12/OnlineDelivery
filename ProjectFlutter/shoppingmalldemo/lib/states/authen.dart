@@ -18,25 +18,54 @@ class _AuthenState extends State<Authen> {
   Widget build(BuildContext context) {
     return Scaffold(
       // appBar: AppBar(
-      //   toolbarHeight: 40,
+      //   toolbarHeight: 100,
       //   automaticallyImplyLeading: true,
       //   actions: [
       //     IconButton(onPressed: () {}, icon: Icon(Icons.ac_unit_outlined))
       //   ],
-      //   centerTitle: true,
+      //   // centerTitle: true,
+      //   title: Text('Sunny'),
       //   backgroundColor: MyConstant.primary,
       //   elevation: 0,
       // ),
       body: SafeArea(
-        child: ListView(
-          children: [
-            buildImage(),
-            buildAppName(),
-            buildUser(),
-            buildPassword(),
-          ],
+        child: GestureDetector(
+          onTap: () => FocusScope.of(context).requestFocus(
+            FocusNode(),
+          ),
+          behavior: HitTestBehavior.opaque,
+          child: ListView(
+            children: [
+              buildImage(),
+              buildAppName(),
+              buildUser(),
+              buildPassword(),
+              buildLogin()
+            ],
+          ),
         ),
       ),
+    );
+  }
+
+  Row buildLogin() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Container(
+          margin: EdgeInsets.symmetric(
+            vertical: 24.h,
+          ),
+          width: 0.6.sw,
+          child: ElevatedButton(
+            style: MyConstant().myButtonStyle(),
+            onPressed: () {},
+            child: Text(
+              'Login',
+            ),
+          ),
+        ),
+      ],
     );
   }
 
@@ -46,6 +75,7 @@ class _AuthenState extends State<Authen> {
       children: [
         Container(
           margin: EdgeInsets.only(top: 16),
+          // padding: EdgeInsets.only(top: 16),
           width: 0.6.sw,
           child: TextFormField(
             decoration: InputDecoration(
@@ -85,6 +115,24 @@ class _AuthenState extends State<Authen> {
           child: TextFormField(
             obscureText: statusRedEye,
             decoration: InputDecoration(
+              suffixIcon: IconButton(
+                onPressed: () {
+                  setState(
+                    () {
+                      statusRedEye = !statusRedEye;
+                    },
+                  );
+                },
+                icon: statusRedEye
+                    ? Icon(
+                        Icons.remove_red_eye,
+                        color: MyConstant.dark,
+                      )
+                    : Icon(
+                        Icons.remove_red_eye_outlined,
+                        color: MyConstant.dark,
+                      ),
+              ),
               labelStyle: MyConstant().h3Style(),
               labelText: 'Password :',
               prefixIcon: Icon(
@@ -111,8 +159,8 @@ class _AuthenState extends State<Authen> {
     );
   }
 
-  Row buildAppName() {
-    return Row(
+  Column buildAppName() {
+    return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ShowTitle(
