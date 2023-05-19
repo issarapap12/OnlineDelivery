@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Startup App demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link href="/CSS/styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="bg-black">
+    <nav class="fixed-top">
+        <div class="container">
+            <div class="nav-wrapper ">
+                <div class="logo">
+                    <a class="navbar-logo" href="/">
+                        <img src="https://www.start.io/wp-content/uploads/2020/12/logo.svg" alt="Start.io">
+                    </a>
+                </div>
+                <ul class="menu menu-active " id="myMenu">
+                    <li class="nav-item liMenu">
+                        <a class="aliMenu nav-link text-light fw-bold fs-6"
+                            href="/page/product.html">Products</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown liMenu">
+                        <a class="aliMenu nav-link dropdown-toggle text-light fw-bold fs-6 " href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Use Cases
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark " href="/page/commingSoon.html">AI-Driven
+                                    Audiences</a>
+                            </li>
+                            <li><a class="dropdown-item text-dark " href="/page/commingSoon.html">Consumer Insights and
+                                    Audiences</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-dark" href="/page/useCases.html">Mobile Monetization</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item liMenu">
+                        <a class="aliMenu nav-link text-light fw-bold fs-6 " href="/page/about.html">About</a>
+                    </li>
+
+                    <!-- การทำให้ปุ่มอยู่ในสถานะ active  -->
+                    <li class="nav-item liMenu">
+                        <a class="aliMenu nav-link active  fw-bold fs-6" style="color: #00D986;"
+                            href="/page/contactUs.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="ham-menu" onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <div class="container-fluid  mx-5" style="padding-left: 14%;">
+        <div class="row my-5">
+            <div class="col-sm-6 my-5 ">
+                <br>
+                <div class="col-sm-12">
+                    <h1 class="text-light fw-bold mx-5" style="font-size:50px;">
+                        About us
+                    </h1>
+                    <br>
+                    <p class="fs-3 text-light mx-5 ">
+                        Start.io is a mobile marketing and audience platform. Start.io (formerly StartApp) empowers the
+                        mobile
+                        app ecosystem and simplifies mobile marketing, audience building and mobile monetization.
+                        Start.io's
+                        direct integration with over 500,000 monthly active mobile apps provides access to unprecedented
+                        levels
+                        of global first-party data, which can be leveraged to understand and predict behaviors, identify
+                        new
+                        opportunities, and fuel growth.
+                    </p>
+                </div>
+
+
+                <br>
+                <div class="row ">
+                    <div class="col-sm-4  mx-5">
+                        <h2 class="text-light">
+                            Our Team
+                        </h2>
+                    </div>
+                    <div class="col-sm-6 ">
+                        <p>
+                            <span class="textG">
+                                To empower marketers and developers by reinventing mobile marketing and providing
+                                effortless
+                                marketing solutions using end-to-end platform.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 mx-5">
+                        <h2 class="text-light">
+                            Join Us
+                        </h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>
+                            <span class="textG">
+                                At Start.io (formerly StartApp), we are looking for talented, passionate people who want
+                                to help us shape the future of decision-making in business. Together, we can build
+                                success for our customers and partners, for Start.io as a company, and for your
+                                professional and personal aspirations.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm-6 centerContainer" style="padding-right: 10%;">
+
+                <img width="387" height="617"
+                    src="https://www.start.io/wp-content/themes/start.io/images/Group 2751.png"
+                    data-lazy-src="https://www.start.io/wp-content/themes/start.io/images/Group 2751.png"
+                    data-ll-status="loaded" class="entered lazyloaded">
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="container">
+        <div class="col-sm-6">
+            <h1 class="text-light fw-bold fs-1 mx-5">
+                Our Team
+            </h1>
+            <br>
+
+        </div>
+        <div class="row g-0 mx-5">
+            <div class="col-sm-6">
+                <div class="card mx-3">
+                    <div class="card-body bgCard">
+                        <div class="row">
+                            <div class="col-sm-4 mx-3 my-3">
+                                <img width="180" height="180" class="img-fluid entered lazyloaded"
+                                    src="https://www.start.io/wp-content/uploads/2021/06/Gil-Dudkiewicz.png"
+                                    alt="Gil Dudkiewicz, Co-Founder &amp; CEO"
+                                    data-lazy-src="https://www.start.io/wp-content/uploads/2021/06/Gil-Dudkiewicz.png"
+                                    data-ll-status="loaded">
+
+                            </div>
+                            <div class="col-sm-6 my-4 ">
+                                <p class="card-title txtHeadCard">Gil Dudkiewicz,</p>
+                                <p class="card-title txtCoCard">Co-Founder & CEO</p>
+                                <a class="linkedilnblack" href="https://www.linkedin.com/in/gil-dudkiewicz-b2684/"
+                                    target="_blank">
+                                    <img width="20" height="20"
+                                        src="https://www.start.io/wp-content/themes/start.io/images/linkedlnblack.svg"
+                                        data-lazy-src="https://www.start.io/wp-content/themes/start.io/images/linkedlnblack.svg"
+                                        data-ll-status="loaded" class="entered lazyloaded"><noscript><img width="20"
+                                            height="20"
+                                            src="https://www.start.io/wp-content/themes/start.io/images/linkedlnblack.svg" /></noscript>
+                                </a>
+                            </div>
+                            <div class="col-sm-12 my-3 cardSpace">
+                                <p style="line-height: 30px;">Gil Dudkiewicz, Co-Founder and CEO of Start.io, is a
+                                    serial entrepreneur. He was
+                                    previously the Entrepreneur In Residence at the Cedar Fund. Prior to Start.io, he
+                                    was the CEO of SweetIM, which he joined as a pre revenue company with five
+                                    employees. During his tenure, Gil led the company to high profitability, and to
+                                    winning the Technology Rising Star Award by Deloitte Fast 50 Competition. SweetIM
+                                    was acquired by Perion Network (NASDAQ: PERI) in November 2012. Gil was also the
+                                    founder and CEO of MyDTV/MeeVee, a personalized TV Guide and TV search. Gil holds an
+                                    MBA from UC Berkeley and a B.Sc. in Engineering from the Israel Institute of
+                                    Technology (Technion).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card mx-3" style="height: 100%!important;">
+                    <div class="card-body bgCard ">
+                        <div class="row">
+                            <div class="col-sm-4 mx-3 my-3">
+                                <img width="180" height="180" class="img-fluid entered lazyloaded"
+                                    src="https://www.start.io/wp-content/uploads/2021/01/Group-2741.png"
+                                    alt="Ran Avidan, Co-Founder &amp; CTO"
+                                    data-lazy-src="https://www.start.io/wp-content/uploads/2021/01/Group-2741.png"
+                                    data-ll-status="loaded">
+
+                            </div>
+                            <div class="col-sm-6 my-4 ">
+                                <p class="card-title txtHeadCard">Ran Avidan</p>
+                                <p class="card-title txtCoCard">Co-Founder & CTO</p>
+                                <a class="linkedilnblack" href="https://www.linkedin.com/in/ranavidan/" target="_blank">
+                                    <img width="20" height="20"
+                                        src="https://www.start.io/wp-content/themes/start.io/images/linkedlnblack.svg"
+                                        data-lazy-src="https://www.start.io/wp-content/themes/start.io/images/linkedlnblack.svg"
+                                        data-ll-status="loaded" class="entered lazyloaded"><noscript><img width="20"
+                                            height="20"
+                                            src="https://www.start.io/wp-content/themes/start.io/images/linkedlnblack.svg" /></noscript>
+                                </a>
+                            </div>
+                            <div class="col-sm-12 my-3 cardSpace">
+                                <p style="line-height: 30px;">Gil Dudkiewicz, Co-Founder and CEO of Start.io, is a
+                                    Ran Avidan, Co-Founder and CTO of Start.io, is responsible for research &amp;
+                                    product development. Previously, Ran was Director of Business Innovation Strategy at
+                                    Amdocs, VP of Products at NewACT (acquired by Amdocs) and held various product and
+                                    development positions at Followap (acquired by NeuStar). Ran holds a B.Sc. in
+                                    Information Systems and an MBA from the Israel Institute of Technology (Technion).
+                                </p>
+                            </div>
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div>
+
+        </div>
+    </div>
+
+
+    <!-- <script src="/JS/scripts.js"></script> -->
+</body>
